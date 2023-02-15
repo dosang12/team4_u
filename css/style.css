@@ -207,8 +207,6 @@ button {
 }
 .header_section {
   height: 100vh;
-  background: radial-gradient(ellipse at bottom, #d1d2d3 0%, #434343 100%);
-  filter: drop-shadow(0 0 10px white);
   padding-top: 20px;
   width: 100%;
   float: left;
@@ -227,7 +225,12 @@ button {
   top: 0;
   left: 0;
   z-index: -1;
-  opacity: 0.5;
+  opacity: 0.9;
+  -webkit-filter: blur(1px);
+  -moz-filter: blur(1px);
+  -o-filter: blur(1px);
+  -ms-filter: blur(1px);
+  filter: blur(1px);
 }
 .logo {
   width: 100%;
@@ -243,7 +246,7 @@ button {
   color: #000;
 }
 .bannerC {
-  padding-top: 100px;
+  padding-top: 70px;
 }
 
 .overlay {
@@ -313,25 +316,44 @@ button {
   width: 100%;
   float: left;
 }
-.image_1 {
+.imagebox {
   width: 100%;
-  float: left;
+  position: relative;
 }
-.banner_taital {
+.image_1_1 {
+  width: 30%;
+  top: 30px;
+  position: absolute;
+}
+.image_1_2 {
+  position: absolute;
+  top: -30px;
+  width: 30%;
+  left: 35%;
+}
+.image_1_3 {
+  position: absolute;
+  right: 0;
+  top: 30px;
+  width: 30%;
+}
+.banner_title {
   width: 100%;
   float: left;
-  font-size: 40px;
+  font-size: 36px;
   color: #181919;
   font-weight: bold;
   text-transform: uppercase;
+  padding-left: 0 !important;
 }
-.banner_taital_1 {
+.banner_title_1 {
   width: 100%;
   float: left;
   font-size: 55px;
   color: #000;
   font-weight: bold;
   text-transform: uppercase;
+  word-break: keep-all;
 }
 .banner_text {
   width: 80%;
@@ -339,6 +361,7 @@ button {
   font-size: 16px;
   color: #000;
   margin-left: 0px;
+  word-break: keep-all;
 }
 .contact_bt {
   width: 170px;
@@ -363,7 +386,7 @@ button {
   float: left;
   padding-bottom: 90px;
 }
-.services_taital {
+.services_title {
   width: 100%;
   float: left;
   font-size: 50px;
@@ -510,7 +533,7 @@ button {
   background-color: #f9fafa;
   height: auto;
 }
-.choose_taital {
+.choose_title {
   width: 100%;
   float: left;
   font-size: 50px;
@@ -536,7 +559,7 @@ button {
   float: left;
   border: 1px solid #90ceec;
 }
-.client_taital {
+.client_title {
   width: 100%;
   float: left;
   font-size: 50px;
@@ -714,7 +737,7 @@ button {
   width: 25%;
   float: left;
 }
-.contact_taital {
+.contact_title {
   width: 100%;
   float: left;
   font-size: 36px;

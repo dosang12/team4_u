@@ -847,3 +847,151 @@ textarea#comment::placeholder {
   width: 100%;
   float: left;
 }
+
+/*=============================== style4u section start ===============================*/
+
+.style4u2_s4 {
+  width: 100%;
+  float: left;
+}
+
+.style4u_text1_s4 {
+  width: 100%;
+  float: left;
+  font-size: 24px;
+  color: #333333;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.style4u_text2_s4 {
+  width: 100%;
+  float: left;
+  font-size: 24px;
+  color: #333333;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+.style4u_img_s4 {
+  width: 100%;
+  float: left;
+  text-align: center;
+}
+
+.style4u_keyword1_s4 {
+  width: 100%;
+  float: left;
+  font-size: 16px;
+  color: #333333;
+  margin-left: 0px;
+}
+
+.style4u_keyword2_s4 {
+  width: 100%;
+  float: left;
+  font-size: 16px;
+  color: #333333;
+  margin-left: 0px;
+  text-align: right;
+}
+.style4u_image_s4 {
+  width: 100%;
+  float: left;
+}
+
+.style4u_header_s4{
+  width: 100%;
+  float: left;
+  font-size: 50px;
+  color: #addaed;
+  font-weight: 600;
+  text-align: center;
+}
+
+.style4u_test_s4{
+  width: 100%;
+  float: left;
+  font-size: 16px;
+  color: #333333;
+  text-align: center;
+  margin-left: 0px;
+  margin-top: 0px;
+}
+/*=============================== style4u section end ===============================*/
+
+/*=============================== footer section start ===============================*/
+
+.footer_top{
+  width: 100%;
+  float: left;
+  background-color: #89cbeb;
+  height: auto;
+  padding: 40px 0px;
+}
+.footer_section {
+  width: 100%;
+  float: left;
+  background-color: #282828;
+  height: auto;
+  padding: 45px 0px;
+}
+.footer_main {
+  width: 100%;
+  float: left;
+}
+.footer_left {
+  width: 25%;
+  float: left;
+}
+.footer_logo{
+  width: 100%;
+  float: left;
+  font-size: 36px;
+  color: #ffffff;
+  font-weight: 600;
+  border-bottom: 1px solid #ffffff;
+  text-align: center;
+}
+.footer_contact{
+  width: 100%;
+  float: left;
+  padding-top: 40px;
+}
+.footer_mail{
+  width: 80%;
+  float: left;
+}
+.footer_massage_text{
+  width: 100%;
+  float: left;
+  font-size: 18px;
+  color: #717471;
+  background-color: transparent !important;
+  border-bottom: 2px solid #6f6f6f !important;
+  border: 0px;
+  height: 90px;
+  text-transform: uppercase;
+  padding: 40px 15px 0px 15px;
+}
+textarea#comment::placeholder {
+  color: #717471;
+}
+.footer_send_bt{
+  width: 150px;
+  float: left;
+  margin-top: 40px;
+}
+.footer_send_bt a{
+  width: 100%;
+  float: left;
+  font-size: 20px;
+  color: #393a40;
+  text-align: center;
+  background-color: #89cbeb;
+  padding: 10px 0px;
+  text-transform: uppercase;
+  border-radius: 40px;
+}
+/*=============================== footer section end ===============================*/

@@ -908,6 +908,7 @@ textarea#comment::placeholder {
   color: #addaed;
   font-weight: 600;
   text-align: center;
+  padding-bottom: 10px;
 }
 
 .style4u_test_s4{
@@ -916,8 +917,6 @@ textarea#comment::placeholder {
   font-size: 16px;
   color: #333333;
   text-align: center;
-  margin-left: 0px;
-  margin-top: 0px;
 }
 /*=============================== style4u section end ===============================*/
 

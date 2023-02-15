@@ -29,6 +29,75 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen" />
     <link rel="stylesheet" href="css/snowefc.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <style>
+      .day_text {
+        font-size: 1.5rem;
+      }
+      .info4u_item_box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .info_slide {
+        width: 240px;
+        height: 320px;
+      }
+
+      .info4_item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 18px;
+        font-size: 22px;
+        font-weight: bold;
+        color: black;
+        background-color: #90ceec;
+      }
+      .info4_item img {
+        height: 100%;
+      }
+      .style_slide {
+        position: relative;
+      }
+      .mySwiper_s4 {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+      .style_wrap {
+        height: 470px;
+      }
+
+      .style_items {
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+      }
+
+      .style_items img {
+        display: block;
+        width: 100%;
+      }
+      .style-item-header {
+        color: #29a9e0;
+      }
+      .style_btn {
+        display: inline-block;
+        color: #29a9e0;
+        width: 6rem;
+        border: 1px solid #29a9e0;
+        border-radius: 40px;
+        text-align: center;
+        transition: all 0.3s;
+      }
+      .style_btn:hover {
+        color: #fff;
+        background-color: #29a9e0;
+      }
+    </style>
   </head>
   <body>
     <!--header section start -->
@@ -304,7 +373,155 @@
       <!-- banner section end -->
     </div>
     <!-- header section end -->
-
+    <!-- information4u -->
+    <div class="services_section layout_padding">
+      <div class="container">
+        <h1 class="choose_taital"><span style="color: #1f1f1f">Information</span> <img src="images/four-100-2.svg" style="width: 60px; height: 100px" class="pb-4" /> <span style="color: #1f1f1f">U</span></h1>
+        <p class="choose_text" style="color: #828282">오늘의 날씨를 보고 당신의 아이템을 추천해 드릴께요</p>
+        <div class="choose_section_2 pt-3 pb-0">
+          <div class="row">
+            <div class="col-12 mb-xl-4">
+              <div class="choose_box choose_box_mb d-flex flex-column">
+                <h1 class="client_taital day_text">오늘</h1>
+                <div class="day1_img_box text-center"></div>
+                <h4 class="text-center day1_temp"></h4>
+                <div class="day1_maxMin_box d-sm-flex justify-content-around">
+                  <h4 class="text-center day1_max"></h4>
+                  <h4 class="text-center day1_min"></h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="choose_box d-flex flex-column">
+                <h1 class="client_taital tommorow day_text"></h1>
+                <div class="day2_img_box text-center"></div>
+                <div class="day1_maxMin_box">
+                  <h4 class="text-center day2_temp"></h4>
+                  <h4 class="text-center day2_feel"></h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="choose_box d-flex flex-column">
+                <h1 class="client_taital day_tommorow day_text"></h1>
+                <div class="day3_img_box text-center"></div>
+                <div class="day1_maxMin_box">
+                  <h4 class="text-center day3_temp"></h4>
+                  <h4 class="text-center day3_feel"></h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="choose_box d-flex flex-column">
+                <h1 class="client_taital three_days_now day_text"></h1>
+                <div class="day4_img_box text-center"></div>
+                <div class="day1_maxMin_box">
+                  <h4 class="text-center day4_temp"></h4>
+                  <h4 class="text-center day4_feel"></h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="choose_box d-flex flex-column day_text">
+                <h1 class="client_taital four_days_now day_text"></h1>
+                <div class="day5_img_box text-center"></div>
+                <div class="day1_maxMin_box">
+                  <h4 class="text-center day5_temp"></h4>
+                  <h4 class="text-center day5_feel"></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-4 d-flex flex-column info4u_item_box">
+            <div class="col-12 mb-xl-4">
+              <h2 class="choose_taital" style="font-size: 40px"><span>오늘의 코디</span></h2>
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-center">
+              <div class="swiper mySwiper_s2 info_slide">
+                <div class="swiper-wrapper info4u_items"></div>
+              </div>
+              <div class="col-12 mt-4 info_txt_box"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- information4u close -->
+    <!-- style section -->
+    <div class="choose_section layout_padding">
+      <div class="container">
+        <h1 class="services_taital text-center"><span>스타일링</span></h1>
+        <p class="services_text mt-1 text-center">당신이 원하는 스타일정보를 찾아보세요</p>
+        <div class="row style_slide">
+          <div class="col-12">
+            <div class="swiper mySwiper_s3">
+              <div class="swiper-wrapper slide-wrap style_wrap">
+                <div class="swiper-slide style_items">
+                  <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                  <h4 class="style-item-header font-weight-bold mt-2 pb-0">캐주얼</h4>
+                  <p class="m-0 mt-1">격식을 차리지 않고 룰에 얽메이지 않는 편안한 룩입니다.</p>
+                  <a href="https://lookbook.nu/search?q=+casual" class="style_btn mt-2" target="_blank">캐주얼 이동</a>
+                </div>
+                <div class="swiper-slide style_items">
+                  <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                  <h4 class="style-item-header font-weight-bold mt-2 pb-0">빈티지</h4>
+                  <p class="m-0 mt-1">
+                    옛날에 입던 헌옷을 착용하여<br />
+                    활동적이고 형식에 얽메이지 않는 옷들을<br />
+                    릴렉스하게 코디하는 룩입니다.
+                  </p>
+                  <a href="https://lookbook.nu/explore/vintage" class="style_btn mt-2" target="_blank">빈티지 이동</a>
+                </div>
+                <div class="swiper-slide style_items">
+                  <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                  <h4 class="style-item-header font-weight-bold mt-2 pb-0">레트로</h4>
+                  <p class="m-0 mt-1">
+                    과거 지나간 시대의 패션을<br />
+                    현 시대 사람들의 기호에 맞추어<br />
+                    재해석 하는 특징을 갖는 룩입니다.
+                  </p>
+                  <a href="https://lookbook.nu/explore/retro" class="style_btn mt-2" target="_blank">레트로 이동</a>
+                </div>
+                <div class="swiper-slide style_items">
+                  <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                  <h4 class="style-item-header font-weight-bold mt-2 pb-0">미니멀</h4>
+                  <p class="m-0 mt-1">
+                    장식을 최소화하고<br />
+                    절제된 실루엣과 색채를 사용하여<br />
+                    최소한의 요소들을 조합하여<br />
+                    큰 효과를 내는 룩 입니다.
+                  </p>
+                  <a href="https://lookbook.nu/search?q=minimalism" class="style_btn mt-2" target="_blank">미니멀 이동</a>
+                </div>
+                <div class="swiper-slide style_items">
+                  <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                  <h4 class="style-item-header font-weight-bold mt-2 pb-0">스트리트</h4>
+                  <p class="m-0 mt-1">
+                    자기 개성대로 자유롭게 입는 스타일,<br />
+                    힙합 보드 등 스트릿 문화에 기반한 스타일,<br />
+                    젊은 층이 입는 현재 유행하는 스타일 등등<br />
+                    다양한 의미로 해석하 수 있는 룩 입니다.<br />
+                  </p>
+                  <a href="https://lookbook.nu/search?q=street" class="style_btn mt-2" target="_blank">스트리트 이동</a>
+                </div>
+                <div class="swiper-slide style_items">
+                  <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                  <h4 class="style-item-header font-weight-bold mt-2 pb-0">클래식</h4>
+                  <p class="m-0 mt-1">
+                    시대를 초월하는 가치와 보편성 을 지닌<br />
+                    고전적인, 전통적인, 싫증이 나지 않는 등의<br />
+                    특징을 갖는 룩 입니다.
+                  </p>
+                  <a href="https://lookbook.nu/explore/classic" class="style_btn mt-2" target="_blank">클래식 이동</a>
+                </div>
+              </div>
+              <!-- <div class="swiper-pagination"></div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- style section close -->
     <script>
       function openNav() {
         document.getElementById("myNav").style.width = "100%";
@@ -313,5 +530,32 @@
         document.getElementById("myNav").style.width = "0%";
       }
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper_s2", {
+        effect: "cards",
+        grabCursor: true,
+      });
+    </script>
+    <script>
+      var swiper = new Swiper(".mySwiper_s3", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+    <script src="js/date_s2.js"></script>
+    <script src="js/info4u_s2.js"></script>
   </body>
 </html>

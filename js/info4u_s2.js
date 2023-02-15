@@ -148,24 +148,24 @@ function setIcon(idCode, idx) {
   }
   switch (idx) {
     case 0:
-      day2Icon.innerHTML = `<img src="images/${idCode}.svg"/>`;
+      day2Icon.innerHTML = `<img src="images/information4u/png/${idCode}.png"/>`;
       break;
     case 1:
-      day3Icon.innerHTML = `<img src="images/${idCode}.svg""/>`;
+      day3Icon.innerHTML = `<img src="images/information4u/png/${idCode}.png"/>`;
       break;
     case 2:
-      day4Icon.innerHTML = `<img src="images/${idCode}.svg""/>`;
+      day4Icon.innerHTML = `<img src="images/information4u/png/${idCode}.png"/>`;
       break;
     case 3:
-      day5Icon.innerHTML = `<img src="images/${idCode}.svg""/>`;
+      day5Icon.innerHTML = `<img src="images/information4u/png/${idCode}.png"/>`;
       break;
     default:
-      day1Icon.innerHTML = `<img src="images/${idCode}.svg""/>`;
+      day1Icon.innerHTML = `<img src="images/information4u/png/${idCode}.png"/>`;
       break;
   }
 }
 function setInfo4u(maxTemp, minTemp, feelLike) {
-  let winter = ["images/people01", "images/people02", "images/people03", "images/people04"];
+  let winter = ["images/information4u/png/cloth_240x320_2", "images/information4u/png/cloth_240x320"];
   if (feelLike < 8) {
     winter.forEach((el) => {
       const infoEl = document.createElement("div");

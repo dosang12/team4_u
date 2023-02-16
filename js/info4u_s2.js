@@ -176,9 +176,9 @@ function setInfo4u(maxTemp, minTemp, feelLike) {
         <div class="feedback_close "></div>
         <div class="feedback">
           <div class="d-flex flex-column  align-items-center mt-2">
-            <div class="choose_text section_txt">이 코디는 어떠신가요?</div>
-            <div class="choose_text section_txt feedGood">좋아요</div>
-            <div class="choose_text section_txt feedBad">싫어요</div>
+            <div class="choose_text section_txt style-item-txt ">이 코디는 어떠신가요?</div>
+            <div class="choose_text section_txt style-item-txt mt-2 feedGood">좋아요</div>
+            <div class="choose_text section_txt style-item-txt  feedBad">싫어요</div>
           </div>
         <div>
       `;

@@ -336,6 +336,10 @@
   .menu_text {
     padding-top: 5px;
   }
+  .style4u_text2_s4{
+    font-size: 20px;
+    padding-top: 10px;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -523,6 +527,7 @@
   .menu_text {
     padding-top: 0px;
   }
+  
 }
 @media (max-width: 575px) {
   .last {
@@ -728,5 +733,12 @@
   }
   .menu_text {
     padding-top: 0px;
+  }
+  .footer_mg{
+    margin: 40px;
+  }
+  .footer_mg2{
+    margin: 50px;
+    justify-content: space-around;
   }
 }

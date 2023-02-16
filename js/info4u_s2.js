@@ -148,24 +148,24 @@ function setIcon(idCode, idx) {
   }
   switch (idx) {
     case 0:
-      day2Icon.innerHTML = `<img src="images/${idCode}.svg"/>`;
+      day2Icon.innerHTML = `<img src="images/information4u/png/${idCode}.png"/>`;
       break;
     case 1:
-      day3Icon.innerHTML = `<img src="images/${idCode}.svg""/>`;
+      day3Icon.innerHTML = `<img src="images/information4u/png/${idCode}.png"/>`;
       break;
     case 2:
-      day4Icon.innerHTML = `<img src="images/${idCode}.svg""/>`;
+      day4Icon.innerHTML = `<img src="images/information4u/png/${idCode}.png"/>`;
       break;
     case 3:
-      day5Icon.innerHTML = `<img src="images/${idCode}.svg""/>`;
+      day5Icon.innerHTML = `<img src="images/information4u/png/${idCode}.png"/>`;
       break;
     default:
-      day1Icon.innerHTML = `<img src="images/${idCode}.svg""/>`;
+      day1Icon.innerHTML = `<img src="images/information4u/png/${idCode}.png"/>`;
       break;
   }
 }
 function setInfo4u(maxTemp, minTemp, feelLike) {
-  let winter = ["images/people01", "images/people02", "images/people03", "images/people04"];
+  let winter = ["images/information4u/png/cloth_240x320_2", "images/information4u/png/cloth_240x320"];
   if (feelLike < 8) {
     winter.forEach((el) => {
       const infoEl = document.createElement("div");
@@ -182,7 +182,7 @@ function setInfo4u(maxTemp, minTemp, feelLike) {
 function winterStyle(maxTemp, minTemp) {
   const weatherTxt = document.querySelector(".info_txt_box");
   weatherTxt.innerHTML = `
-    <p class="text-center">오늘 최고기온은 <span style="color:red;font-weight:bold;">${maxTemp}</span>°C이고 <br />
+    <p class="text-center section_txt">오늘 최고기온은 <span style="color:red;font-weight:bold;">${maxTemp}</span>°C이고 <br />
     오늘 최저기온은 <span style="color:red;font-weight:bold;">${minTemp}</span>°C 입니다. <br />
     비교적 추운관계로 따뜻한 패션을 준비했습니다.
     </p>

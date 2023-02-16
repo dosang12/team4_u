@@ -44,7 +44,6 @@
         width: 240px;
         height: 320px;
       }
-
       .info4_item {
         display: flex;
         align-items: center;
@@ -67,7 +66,7 @@
         padding-bottom: 50px;
       }
       .style_wrap {
-        height: 470px;
+        height: 500px;
       }
 
       .style_items {
@@ -81,9 +80,7 @@
         display: block;
         width: 100%;
       }
-      .style-item-header {
-        color: #29a9e0;
-      }
+
       .style_btn {
         display: inline-block;
         color: #29a9e0;
@@ -101,7 +98,7 @@
   </head>
   <body>
     <!--header section start -->
-    <div class="header_section">
+    <div class="header_section anchor_div" id="anchor_div1">
       <!-- snow efc -->
       <div>
         <div class="snow"></div>
@@ -323,16 +320,37 @@
                       <a href="#" style="font-family: Pretendard-Regular; font-weight: bold">공동구매</a> <span class="padding_left0" style="font-family: Pretendard-Regular; font-weight: bold"><a href="./login.html">Login</a></span>
                     </div>
                   </div>
-                  <div class="shoping_bag"><img src="images/search.svg" style="max-height: 500px" /></div>
+                  <!-- sidenav bar start -->
+                  <aside class="sidebar">
+                    <ul class="rightsidebar">
+                      <li id="rightsidebar_main">
+                        <a href="javascript:;" data-anchor="anchor_div1" ><span>메인</span>
+                          <div></div>
+                        </a>
+                    
+                      </li>
+                      <li id="rightsidebar_i4u">
+                        <a href="javascript:;" data-anchor="anchor_div2"><span>I 4 U</span>
+                        <div></div></a>
+                      </li>
+                      <li id="rightsidebar_styling">
+                        <a href="javascript:;" data-anchor="anchor_div3"><span>스타일링</span>
+                        <div></div></a>
+                      </li>
+                      <li id="rightsidebar_style4u">
+                        <a href="javascript:;" data-anchor="anchor_div4"><span>style4U</span>
+                        <div></div></a>
+                        </li>
+                    </ul>
+                  </aside>
+                  <!-- sidenav bar end -->
                 </div>
                 <div id="myNav" class="overlay">
                   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                   <div class="overlay-content">
                     <a href="index.html">Home</a>
-                    <a href="services.html">Services</a>
-                    <a href="about.html">About</a>
-                    <a href="choose.html">Choose</a>
-                    <a href="team.html">Team</a>
+                    <a href="services.html">Login</a>
+                    <a href="about.html">공동구매</a>
                     <a href="contact.html">Contact Us</a>
                   </div>
                 </div>
@@ -348,10 +366,9 @@
         <div class="bannerC container-fluid">
           <div class="row">
             <div class="col-1 d-none d-sm-block"></div>
-            <div class="col-6 col-md-5">
-              <h1 class="banner_taital" style="font-family: Pretendard-Regular">Weather 4 u는</h1>
-              <h1 class="banner_taital_1" style="font-family: Pretendard-Regular">당신에게 최적의 날씨를</h1>
-              <h1 class="banner_taital_1" style="font-family: Pretendard-Regular">제공합니다.</h1>
+            <div class="col-md-5">
+              <h1 class="banner_title col-12" style="font-family: Pretendard-Regular">Weather4u는</h1>
+              <h1 class="banner_title_1" style="font-family: Pretendard-Regular">당신에게 최적의 날씨를 제공합니다.</h1>
               <p class="banner_text" style="font-family: Pretendard-Regular">
                 날씨정보를 당신의 피드백을 통해 최적화된 정보로 가공하여<br />
                 당신만을 위한 특별한 날씨가 탄생합니다.
@@ -364,8 +381,12 @@
               </div>
             </div>
 
-            <div class="col-6 col-md-5">
-              <div><img src="images/person2.png" class="image_1" /></div>
+            <div class="col-md-6">
+              <div class="imagebox">
+                <img src="images/person1.svg" class="image_1_1" />
+                <img src="images/person2.svg" class="image_1_2" />
+                <img src="images/person3.svg" class="image_1_3" />
+              </div>
             </div>
           </div>
         </div>
@@ -374,15 +395,15 @@
     </div>
     <!-- header section end -->
     <!-- information4u -->
-    <div class="services_section layout_padding">
+    <div class="services_section layout_padding anchor_div" id="anchor_div2">
       <div class="container">
-        <h1 class="choose_taital"><span style="color: #1f1f1f">Information</span> <img src="images/four-100-2.svg" style="width: 60px; height: 100px" class="pb-4" /> <span style="color: #1f1f1f">U</span></h1>
-        <p class="choose_text" style="color: #828282">오늘의 날씨를 보고 당신의 아이템을 추천해 드릴께요</p>
+        <h1 class="choose_title section_header"><span style="color: #1f1f1f">Information</span> <img src="images/information4u/png/four_100(2).png" style="width: 70px; height: 100px" class="pb-4" /> <span style="color: #1f1f1f">U</span></h1>
+        <p class="choose_text section_txt" style="color: #828282">오늘의 날씨를 보고 당신의 아이템을 추천해 드릴께요</p>
         <div class="choose_section_2 pt-3 pb-0">
           <div class="row">
             <div class="col-12 mb-xl-4">
               <div class="choose_box choose_box_mb d-flex flex-column">
-                <h1 class="client_taital day_text">오늘</h1>
+                <h1 class="client_title day_text">오늘</h1>
                 <div class="day1_img_box text-center"></div>
                 <h4 class="text-center day1_temp"></h4>
                 <div class="day1_maxMin_box d-sm-flex justify-content-around">
@@ -393,7 +414,7 @@
             </div>
             <div class="col-lg-3 col-sm-6">
               <div class="choose_box d-flex flex-column">
-                <h1 class="client_taital tommorow day_text"></h1>
+                <h1 class="client_title tommorow day_text"></h1>
                 <div class="day2_img_box text-center"></div>
                 <div class="day1_maxMin_box">
                   <h4 class="text-center day2_temp"></h4>
@@ -403,7 +424,7 @@
             </div>
             <div class="col-lg-3 col-sm-6">
               <div class="choose_box d-flex flex-column">
-                <h1 class="client_taital day_tommorow day_text"></h1>
+                <h1 class="client_title day_tommorow day_text"></h1>
                 <div class="day3_img_box text-center"></div>
                 <div class="day1_maxMin_box">
                   <h4 class="text-center day3_temp"></h4>
@@ -413,7 +434,7 @@
             </div>
             <div class="col-lg-3 col-sm-6">
               <div class="choose_box d-flex flex-column">
-                <h1 class="client_taital three_days_now day_text"></h1>
+                <h1 class="client_title three_days_now day_text"></h1>
                 <div class="day4_img_box text-center"></div>
                 <div class="day1_maxMin_box">
                   <h4 class="text-center day4_temp"></h4>
@@ -423,7 +444,7 @@
             </div>
             <div class="col-lg-3 col-sm-6">
               <div class="choose_box d-flex flex-column day_text">
-                <h1 class="client_taital four_days_now day_text"></h1>
+                <h1 class="client_title four_days_now day_text"></h1>
                 <div class="day5_img_box text-center"></div>
                 <div class="day1_maxMin_box">
                   <h4 class="text-center day5_temp"></h4>
@@ -434,7 +455,7 @@
           </div>
           <div class="row mt-4 d-flex flex-column info4u_item_box">
             <div class="col-12 mb-xl-4">
-              <h2 class="choose_taital" style="font-size: 40px"><span>오늘의 코디</span></h2>
+              <h2 class="choose_title section_txt" style="font-size: 40px"><span>오늘의 코디</span></h2>
             </div>
             <div class="d-flex flex-column justify-content-center align-items-center">
               <div class="swiper mySwiper_s2 info_slide">
@@ -448,34 +469,35 @@
     </div>
     <!-- information4u close -->
     <!-- style section -->
-    <div class="choose_section layout_padding">
+    <div class="choose_section layout_padding anchor_div" id="anchor_div3">
       <div class="container">
-        <h1 class="services_taital text-center"><span>스타일링</span></h1>
-        <p class="services_text mt-1 text-center">당신이 원하는 스타일정보를 찾아보세요</p>
+        <h1 class="choose_title text-center section_header pb-4"><span>스타일링</span></h1>
+        <p class="choose_text mt-1 text-center section_txt" style="color: #828282">당신이 원하는 스타일정보를 찾아보세요</p>
         <div class="row style_slide">
           <div class="col-12">
             <div class="swiper mySwiper_s3">
               <div class="swiper-wrapper slide-wrap style_wrap">
                 <div class="swiper-slide style_items">
-                  <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                  <img src="images/styling_s3/casual/casual.svg" />
                   <h4 class="style-item-header font-weight-bold mt-2 pb-0">캐주얼</h4>
-                  <p class="m-0 mt-1">격식을 차리지 않고 룰에 얽메이지 않는 편안한 룩입니다.</p>
+                  <p class="m-0 mt-1 style-item-txt">격식을 차리지 않고 룰에 얽메이지 않는 편안한 룩입니다.</p>
                   <a href="https://lookbook.nu/search?q=+casual" class="style_btn mt-2" target="_blank">캐주얼 이동</a>
                 </div>
                 <div class="swiper-slide style_items">
-                  <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-                  <h4 class="style-item-header font-weight-bold mt-2 pb-0">빈티지</h4>
-                  <p class="m-0 mt-1">
-                    옛날에 입던 헌옷을 착용하여<br />
-                    활동적이고 형식에 얽메이지 않는 옷들을<br />
-                    릴렉스하게 코디하는 룩입니다.
+                  <img src="images/styling_s3/sports/sports.svg" />
+                  <h4 class="style-item-header font-weight-bold mt-2 pb-0">스포티</h4>
+                  <p class="m-0 mt-1 style-item-txt">
+                    멘즈 웨어에서 시작된 아웃도어 룩은<br />
+                    여성복에까지 영향을 미쳤으며<br />
+                    스포티 트렌드와 믹스되었고<br />
+                    특정 스포츠 경기의 모티브를 차용하는 방식으로 발전한 룩입니다.
                   </p>
-                  <a href="https://lookbook.nu/explore/vintage" class="style_btn mt-2" target="_blank">빈티지 이동</a>
+                  <a href="https://lookbook.nu/search?q=sports" class="style_btn mt-2" target="_blank">빈티지 이동</a>
                 </div>
                 <div class="swiper-slide style_items">
-                  <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                  <img src="images/styling_s3/retro/retro.svg" />
                   <h4 class="style-item-header font-weight-bold mt-2 pb-0">레트로</h4>
-                  <p class="m-0 mt-1">
+                  <p class="m-0 mt-1 style-item-txt">
                     과거 지나간 시대의 패션을<br />
                     현 시대 사람들의 기호에 맞추어<br />
                     재해석 하는 특징을 갖는 룩입니다.
@@ -483,9 +505,9 @@
                   <a href="https://lookbook.nu/explore/retro" class="style_btn mt-2" target="_blank">레트로 이동</a>
                 </div>
                 <div class="swiper-slide style_items">
-                  <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                  <img src="images/styling_s3/minimal/minimal.svg" />
                   <h4 class="style-item-header font-weight-bold mt-2 pb-0">미니멀</h4>
-                  <p class="m-0 mt-1">
+                  <p class="m-0 mt-1 style-item-txt">
                     장식을 최소화하고<br />
                     절제된 실루엣과 색채를 사용하여<br />
                     최소한의 요소들을 조합하여<br />
@@ -494,9 +516,9 @@
                   <a href="https://lookbook.nu/search?q=minimalism" class="style_btn mt-2" target="_blank">미니멀 이동</a>
                 </div>
                 <div class="swiper-slide style_items">
-                  <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                  <img src="images/styling_s3/street/street.svg" />
                   <h4 class="style-item-header font-weight-bold mt-2 pb-0">스트리트</h4>
-                  <p class="m-0 mt-1">
+                  <p class="m-0 mt-1 style-item-txt">
                     자기 개성대로 자유롭게 입는 스타일,<br />
                     힙합 보드 등 스트릿 문화에 기반한 스타일,<br />
                     젊은 층이 입는 현재 유행하는 스타일 등등<br />
@@ -505,9 +527,9 @@
                   <a href="https://lookbook.nu/search?q=street" class="style_btn mt-2" target="_blank">스트리트 이동</a>
                 </div>
                 <div class="swiper-slide style_items">
-                  <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                  <img src="images/styling_s3/classic/classic.svg" />
                   <h4 class="style-item-header font-weight-bold mt-2 pb-0">클래식</h4>
-                  <p class="m-0 mt-1">
+                  <p class="m-0 mt-1 style-item-txt">
                     시대를 초월하는 가치와 보편성 을 지닌<br />
                     고전적인, 전통적인, 싫증이 나지 않는 등의<br />
                     특징을 갖는 룩 입니다.
@@ -523,87 +545,84 @@
     </div>
     <!-- style section close -->
     <!-- style4u_s4 section start -->
-      <div class="container">
-        <h1 class="style4u_header_s4 layout_padding">Style4U</h1>
-        <p class="services_text mt-1 text-center">키워드로 나만의 스타일 찾기</p>
+    <div class="style4u_s4 layout_padding text_style_4u" >
+      <div class="container anchor_div" id="anchor_div4">
+        <h1 class="style4u_title"><span style="color: #1f1f1f">Style</span> <img src="images/information4u/png/four_100(2).png" style="width: 70px; height: 100px" class="pb-4" /> <span style="color: #1f1f1f">U</span></h1>
+        <p class="style4u_text1_s4 text-center">키워드로 나만의 스타일 찾기</p>
         <div class="style4u2_s4">
-          <div class="container">
-            <div class="style4u_image_s4">
-              <div class="row">
-                <div class="col-sm-5">
-                  <div class="style4u_img_s4"><img src="images/nordstrom.png" /></div>
-                </div>
-                <div class="col-sm-7">
-                  <h2 class="style4u_text1_s4">NORDSTROM</h2>
-                  <p class="style4u_keyword1_s4">#트랜드 #디자이너 #다양한</p>
-                </div>
-              </div>
-            </div>
-            <div class="style4u_image_s4">
-              <div class="row">
-                <div class="col-sm-7">
-                  <h2 class="style4u_text2_s4">Theory</h2>
-                  <p class="style4u_keyword2_s4">#남성옷 #여성옷 #신발 #악세사리</p>
-                </div>
-                <div class="col-sm-5">
-                  <div class="style4u_img_s4"><img src="images/theory.png" /></div>
+          <div class="row">
+            <div class="col-md-4 layout_padding">
+              <div class="card">
+                <img class="card-img-top" src="images/style4u/nordstrom.png" alt="Card image cap" />
+                <div class="card-body">
+                  <h5 class="card-title style4u_text2_s4">NORDSTROM</h5>
+                  <div class="card-text style4u_keyword1_s4">
+                    <div>#트랜드 #디자이너</div>
+                    <div>#다양한 #세일</div>
+                  </div>
+                  <div class="col-12">
+                    <p class="text-center"><a href="https://www.nordstrom.com/" class="btn style4u_keyword2_s4 mt-3" style="background-color: #25a8e0">click</a></p>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="style4u_image_s4">
-              <div class="row">
-                <div class="col-sm-5">
-                  <div class="style4u_img_s4"><img src="images/shopbop.png" /></div>
+            <div class="col-md-4 layout_padding">
+              <div class="card">
+                <img class="card-img-top" src="images/style4u/theory.png" alt="Card image cap" />
+                <div class="card-body">
+                  <h5 class="card-title style4u_text2_s4">Theory</h5>
+                  <div class="card-text style4u_keyword1_s4">
+                    <div>#남성옷 #여성옷</div>
+                    <div>#신발 #악세사리</div>
+                  </div>
+                  <div class="col-12">
+                    <p class="text-center"><a href="https://www.theory.com/" class="btn style4u_keyword2_s4 mt-3" style="background-color: #25a8e0">click</a></p>
+                  </div>
                 </div>
-                <div class="col-sm-7">
-                  <h2 class="style4u_text1_s4">shopbop</h2>
-                  <p class="style4u_keyword1_s4">#여성전용 #신상 #디자이너 #악세사리</p>
+              </div>
+            </div>
+            <div class="col-md-4 layout_padding">
+              <div class="card">
+                <img class="card-img-top" src="images/style4u/shopbop.png" alt="Card image cap" />
+                <div class="card-body">
+                  <h5 class="card-title style4u_text2_s4">shopbop</h5>
+                  <div class="card-text style4u_keyword1_s4">
+                    <div>#여성전용 #신상</div>
+                    <div>#디자이너 #악세사리</div>
+                  </div>
+                  <div class="col-12">
+                    <p class="text-center"><a href="https://www.shopbop.com/" class="btn style4u_keyword2_s4 mt-3" style="background-color: #25a8e0">click</a></p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
     <!-- style4u_s4 section end -->
     <!-- footer section start -->
-    <div class="footer_top layout_padding"></div>
-    <div class="footer_section">
+    <div class="footer_section text_style_4u">
       <div class="container">
-        <div class="footer_main">
-          <div class="footer_left">
-            <h1 class="footer_logo"><img src="images/footer_logo.png" alt="" /></h1>
-          </div>
-        </div>
-        <div class="footer_contact">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="footer_mail">
-                <input type="" class="email_text" placeholder="Name" name="Name" />
-                <input type="" class="email_text" placeholder="Email" name="Email" />
-                <input type="" class="email_text" placeholder="Phone Number" name="Phone Number" />
-                <textarea class="footer_massage_text" placeholder="Message" rows="5" id="comment" name="Message"></textarea>
-                <div class="footer_send_bt"><a href="#">send</a></div>
-              </div>
+        <div class="row footer_color">
+          <div class="col-md-12">
+            <div><img src="images/footer_logo.png" alt="" /></div>
+            <div class="mt-2">
+              <div class="mt-2">이메일 : weather4u @ xxxx.com</div>
+              <div class="mt-2">문의전화 : 010 - xxxx - xxxx</div>
+              <div class="mt-2">주소 : 서울특별시 강남구 테헤란로 5길 24 장연빌딩 4층</div>
+              <div class="mt-2">사업자등록번호 : xx-xxxx-xxxx</div>
+              <div class="mt-2">통신판매업신고번호 : xx-xxxx-xxxx</div>
             </div>
-            <div class="col-md-6">
-              <div class="w-100 h-75">
-                <div class="mt-4">
-                  <p>주소 : 서울특별시 강남구 테헤란로 5길 24 장연빌딩 4층</p>
-                  <p>문의전화 : 010 - xxxx - xxxx</p>
-                  <p>이메일 : weather4u @ xxxx.com</p>
-                  <p>개인정보보호 처리방침</p>
-                </div>
-                <div class="w-50 d-flex justify-content-around">
-                  <div>
-                    <a href="#"><img src="images/fb-icon1.png" /></a>
-                  </div>
-                  <div>
-                    <a href="#"><img src="images/twitter-icon1.png" /></a>
-                  </div>
-                  <div>
-                    <a href="#"><img src="images/instagram-icon1.png" /></a>
-                  </div>
-                </div>
+          </div>
+          <div class="col-md-12 text-md-right mt-3">
+            <div class="container">
+              <div class="row flex-wrap justify-content-between text-center">
+                <div class="footer_mg"><a href="#" style="color: white;">이용약관</a></div>
+                <div class="footer_mg"><a href="#" style="color: white;">개인정보 취급방침</a></div>
+                <div class="footer_mg"><a href="#" style="color: white;">개인정보 관리 책임자</a></div>
+                <div class="footer_mg2"><a href="#" style="color: white;">사업자 정보조회</a></div>
+                <div class="footer_mg2"><a href="#" style="color: white;">호스팅제공자</a></div>
               </div>
             </div>
           </div>
@@ -644,6 +663,8 @@
         },
       });
     </script>
+    <script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+    <script src="js/sidebar.js"></script>
     <script src="js/date_s2.js"></script>
     <script src="js/info4u_s2.js"></script>
   </body>

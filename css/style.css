@@ -922,6 +922,41 @@ textarea#comment::placeholder {
   float: left;
 }
 
+/*============================ information4u section start ============================*/
+
+.day_text {
+  font-family: "Pretendard-Regular";
+}
+.day1_tamp,
+.day1_max,
+.day1_min,
+.day2_temp,
+.day2_feel,
+.day3_temp,
+.day3_feel,
+.day4_temp,
+.day4_feel,
+.day5_temp,
+.day5_feel,
+.section_header,
+.section_txt,
+.style_btn {
+  font-family: "Pretendard-Regular";
+}
+/*============================= information4u section end =============================*/
+/*============================ style info section start ============================*/
+.style-item-header {
+  font-family: "Pretendard-Regular";
+  color: #29a9e0;
+  font-size: 1.2rem;
+}
+.style-item-txt {
+  font-family: "Pretendard-Regular";
+  font-size: 0.8rem;
+}
+
+/*============================= information4u section end =============================*/
+
 /*=============================== style4u section start ===============================*/
 
 .style4u2_s4 {

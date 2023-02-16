@@ -165,7 +165,7 @@ function setIcon(idCode, idx) {
   }
 }
 function setInfo4u(maxTemp, minTemp, feelLike) {
-  let winter = ["images/information4u/people01", "images/information4u/people01"];
+  let winter = ["images/information4u/people01", "images/information4u/people02"];
   if (feelLike < 8) {
     winter.forEach((el) => {
       const infoEl = document.createElement("div");

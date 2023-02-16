@@ -601,7 +601,8 @@ aside ul li {
 .choose_box {
   width: 100%;
   float: left;
-  border: 1px solid #90ceec;
+  box-shadow: 6px 17px 20px #6ea3a31c, -12px -9px 9px #cae6e61c;
+  padding: 2em;
 }
 .client_title {
   width: 100%;
@@ -992,7 +993,6 @@ textarea#comment::placeholder {
   width: 100%;
   float: left;
   padding-bottom: 90px;
-  background-color: #f9fafa;
   height: auto;
 }
 .shop4u_header_s4 {

@@ -165,20 +165,20 @@ function setIcon(idCode, idx) {
   }
 }
 function setInfo4u(maxTemp, minTemp, feelLike) {
-  let winter = ["images/information4u/png/cloth_240x320_2", "images/information4u/png/cloth_240x320"];
+  let winter = ["images/information4u/people01", "images/information4u/people02"];
   if (feelLike < 8) {
     winter.forEach((el) => {
       const infoEl = document.createElement("div");
       infoEl.classList.add("swiper-slide", "info4_item");
       infoEl.innerHTML = `
-        <img src="${el}.png"/>
+        <img src="${el}.svg"/>
         <div class="feedback_btn feedOn"></div>
         <div class="feedback_close "></div>
         <div class="feedback">
           <div class="d-flex flex-column  align-items-center mt-2">
-            <div class="choose_text section_txt">이 코디는 어떠신가요?</div>
-            <div class="choose_text section_txt feedGood">좋아요</div>
-            <div class="choose_text section_txt feedBad">싫어요</div>
+            <div class="choose_text section_txt style-item-txt ">이 코디는 어떠신가요?</div>
+            <div class="choose_text section_txt style-item-txt mt-2 feedGood">좋아요</div>
+            <div class="choose_text section_txt style-item-txt  feedBad">싫어요</div>
           </div>
         <div>
       `;

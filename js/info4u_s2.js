@@ -172,9 +172,20 @@ function setInfo4u(maxTemp, minTemp, feelLike) {
       infoEl.classList.add("swiper-slide", "info4_item");
       infoEl.innerHTML = `
         <img src="${el}.png"/>
+        <div class="feedback_btn feedOn"></div>
+        <div class="feedback_close "></div>
+        <div class="feedback">
+          <div class="d-flex flex-column  align-items-center mt-2">
+            <div class="choose_text section_txt">이 코디는 어떠신가요?</div>
+            <div class="choose_text section_txt feedGood">좋아요</div>
+            <div class="choose_text section_txt feedBad">싫어요</div>
+          </div>
+        <div>
       `;
+
       info4uItems.appendChild(infoEl);
       winterStyle(maxTemp, minTemp);
+      feedBack(infoEl);
     });
   }
 }
@@ -187,6 +198,46 @@ function winterStyle(maxTemp, minTemp) {
     비교적 추운관계로 따뜻한 패션을 준비했습니다.
     </p>
   `;
+}
+
+function feedBack() {
+  const feedBtn = document.querySelectorAll(".feedback_btn");
+  const feedClose = document.querySelectorAll(".feedback_close");
+  const feed = document.querySelectorAll(".feedback");
+  const fGood = document.querySelector(".feedGood");
+  const fBad = document.querySelector(".feedBad");
+
+  feedBtn.forEach((el, idx) => {
+    fShow(el, idx);
+  });
+  feedClose.forEach((el, idx) => {
+    fHide(el, idx);
+    fGood.addEventListener("click", function () {
+      feed[idx].classList.remove("feedOn");
+      feedClose[idx].classList.remove("feedOn");
+      feedBtn[idx].classList.add("feedOn");
+    });
+    fBad.addEventListener("click", function () {
+      feed[idx].classList.remove("feedOn");
+      feedClose[idx].classList.remove("feedOn");
+      feedBtn[idx].classList.add("feedOn");
+    });
+  });
+
+  function fShow(el, idx) {
+    el.addEventListener("click", function () {
+      feed[idx].classList.add("feedOn");
+      feedClose[idx].classList.add("feedOn");
+      el.classList.remove("feedOn");
+    });
+  }
+  function fHide(el, idx) {
+    el.addEventListener("click", function () {
+      feed[idx].classList.remove("feedOn");
+      feedClose[idx].classList.remove("feedOn");
+      feedBtn[idx].classList.add("feedOn");
+    });
+  }
 }
 
 navigator.geolocation.getCurrentPosition(currentOn, currentOff);

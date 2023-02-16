@@ -215,6 +215,17 @@ button {
   padding-bottom: 201px;
 }
 
+.header_section::before {
+  width: 100%;
+  height: 100%;
+  content: "";
+  background:#ffffff40;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backdrop-filter:blur(2.5px);
+  
+}
 .header_section::after {
   width: 100%;
   height: 100%;
@@ -226,12 +237,52 @@ button {
   left: 0;
   z-index: -1;
   opacity: 0.9;
-  -webkit-filter: blur(1px);
-  -moz-filter: blur(1px);
-  -o-filter: blur(1px);
-  -ms-filter: blur(1px);
-  filter: blur(1px);
+
 }
+
+aside {
+  width: 100px;
+  height: 300px;
+  position: fixed;
+  top: 300px;
+  right: 20px;
+  z-index: 99999999;
+}
+aside ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+aside ul li {
+  padding: 15px 0;
+  font-family: "Pretendard-Regular";
+}
+
+.rightsidebar li div {
+  margin-bottom: 4px;
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  background-color: #444;
+  border-radius: 50%;
+  margin-left: 15px;
+  cursor: pointer;
+}
+.rightsidebar li a span{
+  display: none;
+  font-size: 12px;
+}
+
+.rightsidebar li:hover a span{
+  display: inline-block;
+  font-family: "Pretendard-Regular";
+}
+
+
+
+
+
+
 .logo {
   width: 100%;
   float: left;

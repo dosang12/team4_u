@@ -44,7 +44,6 @@
         width: 240px;
         height: 320px;
       }
-
       .info4_item {
         display: flex;
         align-items: center;
@@ -101,7 +100,7 @@
   </head>
   <body>
     <!--header section start -->
-    <div class="header_section">
+    <div class="header_section anchor_div" id="anchor_div1">
       <!-- snow efc -->
       <div>
         <div class="snow"></div>
@@ -323,16 +322,37 @@
                       <a href="#" style="font-family: Pretendard-Regular; font-weight: bold">공동구매</a> <span class="padding_left0" style="font-family: Pretendard-Regular; font-weight: bold"><a href="./login.html">Login</a></span>
                     </div>
                   </div>
-                  <div class="shoping_bag"><img src="images/search.svg" style="max-height: 500px" /></div>
+                  <!-- sidenav bar start -->
+                  <aside class="sidebar">
+                    <ul class="rightsidebar">
+                      <li id="rightsidebar_main">
+                        <a href="javascript:;" data-anchor="anchor_div1" ><span>메인</span>
+                          <div></div>
+                        </a>
+                    
+                      </li>
+                      <li id="rightsidebar_i4u">
+                        <a href="javascript:;" data-anchor="anchor_div2"><span>I 4 U</span>
+                        <div></div></a>
+                      </li>
+                      <li id="rightsidebar_styling">
+                        <a href="javascript:;" data-anchor="anchor_div3"><span>스타일링</span>
+                        <div></div></a>
+                      </li>
+                      <li id="rightsidebar_style4u">
+                        <a href="javascript:;" data-anchor="anchor_div4"><span>style4U</span>
+                        <div></div></a>
+                        </li>
+                    </ul>
+                  </aside>
+                  <!-- sidenav bar end -->
                 </div>
                 <div id="myNav" class="overlay">
                   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                   <div class="overlay-content">
                     <a href="index.html">Home</a>
-                    <a href="services.html">Services</a>
-                    <a href="about.html">About</a>
-                    <a href="choose.html">Choose</a>
-                    <a href="team.html">Team</a>
+                    <a href="services.html">Login</a>
+                    <a href="about.html">공동구매</a>
                     <a href="contact.html">Contact Us</a>
                   </div>
                 </div>
@@ -377,7 +397,7 @@
     </div>
     <!-- header section end -->
     <!-- information4u -->
-    <div class="services_section layout_padding">
+    <div class="services_section layout_padding anchor_div" id="anchor_div2">
       <div class="container">
         <h1 class="choose_title"><span style="color: #1f1f1f">Information</span> <img src="images/information4u/png/four_100(2).png" style="width: 70px; height: 100px" class="pb-4" /> <span style="color: #1f1f1f">U</span></h1>
         <p class="choose_text" style="color: #828282">오늘의 날씨를 보고 당신의 아이템을 추천해 드릴께요</p>
@@ -451,7 +471,7 @@
     </div>
     <!-- information4u close -->
     <!-- style section -->
-    <div class="choose_section layout_padding">
+    <div class="choose_section layout_padding anchor_div" id="anchor_div3">
       <div class="container">
         <h1 class="services_title text-center"><span>스타일링</span></h1>
         <p class="services_text mt-1 text-center">당신이 원하는 스타일정보를 찾아보세요</p>
@@ -526,7 +546,7 @@
     </div>
     <!-- style section close -->
     <!-- style4u_s4 section start -->
-    <div class="container">
+    <div class="container anchor_div" id="anchor_div4">
       <h1 class="style4u_header_s4 layout_padding">Style4U</h1>
       <p class="services_text mt-1 text-center">키워드로 나만의 스타일 찾기</p>
       <div class="style4u2_s4">
@@ -647,6 +667,8 @@
         },
       });
     </script>
+    <script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+    <script src="js/sidebar.js"></script>
     <script src="js/date_s2.js"></script>
     <script src="js/info4u_s2.js"></script>
   </body>

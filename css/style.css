@@ -219,12 +219,11 @@ button {
   width: 100%;
   height: 100%;
   content: "";
-  background:#ffffff40;
+  background: #ffffff40;
   position: absolute;
   top: 0;
   left: 0;
-  backdrop-filter:blur(2.5px);
-  
+  backdrop-filter: blur(2.5px);
 }
 .header_section::after {
   width: 100%;
@@ -237,7 +236,6 @@ button {
   left: 0;
   z-index: -1;
   opacity: 0.9;
-
 }
 
 aside {
@@ -268,20 +266,15 @@ aside ul li {
   margin-left: 15px;
   cursor: pointer;
 }
-.rightsidebar li a span{
+.rightsidebar li a span {
   display: none;
   font-size: 12px;
 }
 
-.rightsidebar li:hover a span{
+.rightsidebar li:hover a span {
   display: inline-block;
   font-family: "Pretendard-Regular";
 }
-
-
-
-
-
 
 .logo {
   width: 100%;
@@ -991,19 +984,18 @@ textarea#comment::placeholder {
 
 /*============================= information4u section end =============================*/
 
-
 /*=============================== style4u section start ===============================*/
-.text_style_4u{
+.text_style_4u {
   font-family: "Pretendard-Regular";
 }
-.shop4u_s4{
+.shop4u_s4 {
   width: 100%;
   float: left;
   padding-bottom: 90px;
   background-color: #f9fafa;
   height: auto;
 }
-.shop4u_header_s4{
+.shop4u_header_s4 {
   width: 100%;
   font-size: 50px;
   color: #addaed;
@@ -1012,13 +1004,13 @@ textarea#comment::placeholder {
   padding-bottom: 10px;
   float: left;
 }
-.shop4u_text1_s4{
+.shop4u_text1_s4 {
   width: 100%;
   float: left;
   font-size: 16px;
   color: #333333;
 }
-.shop4u_text2_s4{
+.shop4u_text2_s4 {
   width: 100%;
   float: left;
   font-size: 24px;
@@ -1041,7 +1033,7 @@ textarea#comment::placeholder {
   float: left;
   color: #333333;
 }
-.shop4u_title{
+.shop4u_title {
   width: 100%;
   float: left;
   font-size: 50px;
@@ -1050,12 +1042,9 @@ textarea#comment::placeholder {
   text-align: center;
 }
 
-
-
 /*=============================== style4u section end ===============================*/
 
 /*=============================== footer section start ===============================*/
-
 
 .footer_section {
   width: 100%;
@@ -1064,8 +1053,10 @@ textarea#comment::placeholder {
   height: auto;
   padding: 45px 0px;
 }
-.footer_color{
+.footer_color {
   color: white;
-
+}
+.footer_mg2 a {
+  float: left;
 }
 /*=============================== footer section end ===============================*/

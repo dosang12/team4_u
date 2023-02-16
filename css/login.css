@@ -29,9 +29,33 @@ h1 {
   font-weight: 700;
 }
 
+
+aside {
+  width: 100px;
+  height: 300px;
+  position: fixed;
+  top: 300px;
+  right: 20px;
+  z-index: 99999999;
+}
+.homebutton{
+   border-radius: 30px;
+  font-family: "Pretendard-Regular";
+  text-align: center;
+  text-decoration: none;
+  color: #a1d5ef;
+  float: right;
+}
+.homebutton:hover{
+  text-decoration: none;
+  
+}
+ 
+
 section#formHolder {
   padding: 50px 0;
 }
+
 
 .brand {
   padding: 20px;

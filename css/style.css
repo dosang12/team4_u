@@ -418,6 +418,7 @@ aside ul li {
   color: #000;
 }
 .contact_bt a:hover {
+  font-weight: bold;
   color: blue;
 }
 .contact_padding {
@@ -1041,7 +1042,10 @@ textarea#comment::placeholder {
   font-weight: 600;
   text-align: center;
 }
-
+.shop4u_keyword2_s4:hover {
+  color: rgb(225, 225, 225);
+  font-weight: bold;
+}
 /*=============================== style4u section end ===============================*/
 
 /*=============================== footer section start ===============================*/
@@ -1051,12 +1055,15 @@ textarea#comment::placeholder {
   float: left;
   background-color: #282828;
   height: auto;
-  padding: 45px 0px;
+  padding: 20px 0px 20px 0px;
 }
 .footer_color {
   color: white;
 }
 .footer_mg2 a {
   float: left;
+}
+.w-100 {
+  margin: 20px 0px !important;
 }
 /*=============================== footer section end ===============================*/

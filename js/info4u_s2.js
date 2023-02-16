@@ -15,8 +15,9 @@ const day1Icon = document.querySelector(".day1_img_box"),
   day5Icon = document.querySelector(".day5_img_box"),
   day5Temp = document.querySelector(".day5_temp"),
   day5Feel = document.querySelector(".day5_feel"),
-  info4uItems = document.querySelector(".info4u_items");
-
+  info4uItems = document.querySelector(".info4u_items"),
+  day1FeelTxt = document.querySelector(".day1_feel_txt"),
+  day1Status = document.querySelector(".day1-status");
 const API_KEY = "13d65e61f137b42c9eab57a4295043cb";
 function currentOn(position) {
   const lat = position.coords.latitude;
@@ -65,17 +66,16 @@ function getCurWeather(datas) {
 
 function setCurWeather(temp, maxTemp, minTemp, feelLike, idCode) {
   setIcon(idCode, 5);
-  day1Temp.innerText = `현재온도 : ${temp}°C`;
-  day1Max.innerText = `최대온도 : ${maxTemp}°C`;
-  day1Min.innerText = `최저온도 : ${minTemp}°C`;
+  day1Temp.innerText = `${temp}°`;
+  day1FeelTxt.innerText = `${feelLike}°`;
+  day1Max.innerText = `${maxTemp}°`;
+  day1Min.innerText = `${minTemp}°`;
   setInfo4u(maxTemp, minTemp, feelLike);
 }
 
 function getWeekWeather(datas) {
-  console.log(datas.list);
   let days = [datas.list[10], datas.list[18], datas.list[26], datas.list[34]];
   days.forEach((el, idx) => {
-    console.log(el);
     let dayWeather = {
       dayTemp: el.main.temp,
       dayFeel: el.main.feels_like,
@@ -92,23 +92,23 @@ function setWeek(weekTemp, feelLike, idCode, idx) {
   switch (idx) {
     case 0:
       setIcon(idCode, idx);
-      day2Temp.innerText = `온도 : ${weekTemp}°C`;
-      day2Feel.innerText = `체감온도 : ${feelLike}°C`;
+      day2Temp.innerText = `${weekTemp}°`;
+      day2Feel.innerText = `${feelLike}°`;
       break;
     case 1:
       setIcon(idCode, idx);
-      day3Temp.innerText = `온도 : ${weekTemp}°C`;
-      day3Feel.innerText = `체감온도 : ${feelLike}°C`;
+      day3Temp.innerText = `${weekTemp}°`;
+      day3Feel.innerText = `${feelLike}°`;
       break;
     case 2:
       setIcon(idCode, idx);
-      day4Temp.innerText = `온도 : ${weekTemp}°C`;
-      day4Feel.innerText = `체감온도 : ${feelLike}°C`;
+      day4Temp.innerText = `${weekTemp}°`;
+      day4Feel.innerText = `${feelLike}°`;
       break;
     default:
       setIcon(idCode, idx);
-      day5Temp.innerText = `온도 : ${weekTemp}°C`;
-      day5Feel.innerText = `체감온도 : ${feelLike}°C`;
+      day5Temp.innerText = `${weekTemp}°`;
+      day5Feel.innerText = `${feelLike}°`;
       break;
   }
 }
@@ -118,54 +118,63 @@ function setIcon(idCode, idx) {
   switch (iconCase) {
     case "01":
       idCode = "01d";
+      day1Status.innerText = "맑음";
       break;
     case "02":
       idCode = "02d";
+      day1Status.innerText = "살짝 흐림";
       break;
     case "03":
       idCode = "03d";
+      day1Status.innerText = "흐림";
       break;
     case "04":
       idCode = "03d";
+      day1Status.innerText = "흐림";
       break;
     case "09":
       idCode = "10d";
+      day1Status.innerText = "비";
       break;
     case "10":
       idCode = "10d";
+      day1Status.innerText = "비";
       break;
     case "11":
       idCode = "11d";
+      day1Status.innerText = "번개";
       break;
     case "13":
       idCode = "13d";
+      day1Status.innerText = "눈";
       break;
     case "50":
       idCode = "50d";
+      day1Status.innerText = "안개";
       break;
     default:
       console.log("failed");
   }
   switch (idx) {
     case 0:
-      day2Icon.innerHTML = `<img src="images/information4u/png/${idCode}.png"/>`;
+      day2Icon.innerHTML = `<img src="images/information4u/${idCode}.svg"/>`;
       break;
     case 1:
-      day3Icon.innerHTML = `<img src="images/information4u/png/${idCode}.png"/>`;
+      day3Icon.innerHTML = `<img src="images/information4u/${idCode}.svg"/>`;
       break;
     case 2:
-      day4Icon.innerHTML = `<img src="images/information4u/png/${idCode}.png"/>`;
+      day4Icon.innerHTML = `<img src="images/information4u/${idCode}.svg"/>`;
       break;
     case 3:
-      day5Icon.innerHTML = `<img src="images/information4u/png/${idCode}.png"/>`;
+      day5Icon.innerHTML = `<img src="images/information4u/${idCode}.svg"/>`;
       break;
     default:
-      day1Icon.innerHTML = `<img src="images/information4u/png/${idCode}.png"/>`;
+      day1Icon.innerHTML = `<img src="images/information4u/${idCode}.svg"/>`;
       break;
   }
 }
 function setInfo4u(maxTemp, minTemp, feelLike) {
-  let winter = ["images/information4u/people01", "images/information4u/people02"];
+  let winter = ["images/information4u/people05", "images/information4u/people01", "images/information4u/people02", "images/information4u/people06"];
   if (feelLike < 8) {
     winter.forEach((el) => {
       const infoEl = document.createElement("div");
@@ -239,5 +248,4 @@ function feedBack() {
     });
   }
 }
-
 navigator.geolocation.getCurrentPosition(currentOn, currentOff);

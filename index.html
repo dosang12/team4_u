@@ -94,6 +94,25 @@
         color: #fff;
         background-color: #29a9e0;
       }
+      .weather-box {
+        border-radius: 10px;
+        height: 250px;
+      }
+      .feel_txt {
+        color: white;
+        background-color: #59b6df;
+      }
+      .weather_txt {
+        color: #7f98a2;
+      }
+      .day1_sec-txt {
+        font-size: 1.2rem;
+      }
+      .day_c {
+        color: #313131;
+        font-weight: bold;
+      }
+    </style>
     </style>
   </head>
   <body>
@@ -404,57 +423,69 @@
     <div class="services_section layout_padding anchor_div" id="anchor_div2">
       <div class="container">
         <h1 class="choose_title section_header"><span style="color: #1f1f1f">Information</span> <img src="images/information4u/png/four_100(2).png" style="width: 70px; height: 100px" class="pb-4" /> <span style="color: #1f1f1f">U</span></h1>
-        <p class="choose_text section_txt" style="color: #828282">오늘의 날씨를 보고 당신의 아이템을 추천해 드릴게요</p>
+        <p class="choose_text section_txt" style="color: #828282">오늘의 날씨를 보고 당신의 아이템을 추천해 드릴께요</p>
         <div class="choose_section_2 pt-3 pb-0">
           <div class="row">
-            <div class="col-12 mb-xl-4">
-              <div class="choose_box choose_box_mb d-flex flex-column">
-                <h1 class="client_title day_text">오늘</h1>
-                <div class="day1_img_box text-center"></div>
-                <h4 class="text-center day1_temp"></h4>
-                <div class="day1_maxMin_box d-sm-flex justify-content-around">
-                  <h4 class="text-center day1_max"></h4>
-                  <h4 class="text-center day1_min"></h4>
+            <div class="col-lg-3 mb-xl-4 col-sm-12 mon-box">
+              <div class="choose_box choose_box_mb d-flex flex-column weather-box" style="background-color: #59b6df" style="height: 100%">
+                <div class="mon-item-box w-100 h-100 d-flex justify-content-center align-items-center flex-column">
+                  <h2 class="text-center" style="color: #fff">MON</h2>
+                  <p class="mon-txt text-center" style="color: #fff; font-size: 6.5rem; margin-top: 2.5rem; letter-spacing: -0.7px"></p>
                 </div>
               </div>
             </div>
+            <div class="col-lg-9 mb-xl-4 col-sm-12">
+              <div class="choose_box choose_box_mb weather-box today-box d-flex justify-content-around align-items-center">
+                <div class="day1_maxMin_box">
+                  <h3 style="font-size: 1.3rem; color: #59b6df">오늘은 <span class="day1-status ml-2" style="font-size: 2rem"></span></h3>
+                  <h4 class="day1_sec-txt weather_txt">최고온도 <span class="day1_max ml-3" style="color: #df5975"></span></h4>
+                  <h4 class="day1_sec-txt weather_txt">최저온도 <span class="day1_min ml-3" style="color: #59b6df"></span></h4>
+                  <h4 class="day1_sec-txt weather_txt">체감온도 <span class="day1_feel_txt feel_txt ml-3"></span></h4>
+                </div>
+                <div class="today-box2 text-center">
+                  <div class="day1_img_box text-center"></div>
+                  <h3 class="day1_txt weather_txt" style="font-size: 1.7rem; margin-left: -10px">Today <span class="to-txt ml-4" style="color: #59b6df; font-size: 2.2rem"></span></h3>
+                </div>
+                <h4 class="text-center weather_txt" style="font-size: 2rem">현재온도<br /><span class="day1_temp mt-3" style="color: #59b6df; font-size: 5rem"></span></h4>
+              </div>
+            </div>
             <div class="col-lg-3 col-sm-6">
-              <div class="choose_box d-flex flex-column">
-                <h1 class="client_title tommorow day_text"></h1>
+              <div class="choose_box d-flex flex-column weather-box">
+                <h1 class="client_title day_text">Day <span class="tommorow"></span></h1>
                 <div class="day2_img_box text-center"></div>
                 <div class="day1_maxMin_box">
-                  <h4 class="text-center day2_temp"></h4>
-                  <h4 class="text-center day2_feel"></h4>
+                  <h4 class="text-center weather_txt mt-4">평균온도 <span class="day2_temp ml-2 day_c"></span></h4>
+                  <h4 class="text-center weather_txt">평균온도 <span class="day2_feel feel_txt ml-2"></span></h4>
                 </div>
               </div>
             </div>
             <div class="col-lg-3 col-sm-6">
-              <div class="choose_box d-flex flex-column">
-                <h1 class="client_title day_tommorow day_text"></h1>
+              <div class="choose_box d-flex flex-column weather-box">
+                <h1 class="client_title day_text">Day <span class="day_tommorow"></span></h1>
                 <div class="day3_img_box text-center"></div>
                 <div class="day1_maxMin_box">
-                  <h4 class="text-center day3_temp"></h4>
-                  <h4 class="text-center day3_feel"></h4>
+                  <h4 class="text-center weather_txt mt-4">평균온도 <span class="day3_temp ml-2 day_c"></span></h4>
+                  <h4 class="text-center weather_txt">체감온도 <span class="day3_feel feel_txt ml-2"></span></h4>
                 </div>
               </div>
             </div>
             <div class="col-lg-3 col-sm-6">
-              <div class="choose_box d-flex flex-column">
-                <h1 class="client_title three_days_now day_text"></h1>
+              <div class="choose_box d-flex flex-column weather-box">
+                <h1 class="client_title day_text">Day <span class="three_days_now"></span></h1>
                 <div class="day4_img_box text-center"></div>
                 <div class="day1_maxMin_box">
-                  <h4 class="text-center day4_temp"></h4>
-                  <h4 class="text-center day4_feel"></h4>
+                  <h4 class="text-center weather_txt mt-4">평균온도 <span class="day4_temp ml-2 day_c"></span></h4>
+                  <h4 class="text-center weather_txt">체감온도 <span class="day4_feel feel_txt ml-2"></span></h4>
                 </div>
               </div>
             </div>
             <div class="col-lg-3 col-sm-6">
-              <div class="choose_box d-flex flex-column">
-                <h1 class="client_title four_days_now day_text"></h1>
+              <div class="choose_box d-flex flex-column weather-box">
+                <h1 class="client_title day_text">Day <span class="four_days_now"></span></h1>
                 <div class="day5_img_box text-center"></div>
                 <div class="day1_maxMin_box">
-                  <h4 class="text-center day5_temp"></h4>
-                  <h4 class="text-center day5_feel"></h4>
+                  <h4 class="text-center weather_txt mt-4">평균온도 <span class="day5_temp ml-2 day_c"></span></h4>
+                  <h4 class="text-center weather_txt">체감온도 <span class="day5_feel feel_txt ml-2"></span></h4>
                 </div>
               </div>
             </div>

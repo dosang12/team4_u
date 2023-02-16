@@ -182,7 +182,7 @@ function setInfo4u(maxTemp, minTemp, feelLike) {
 function winterStyle(maxTemp, minTemp) {
   const weatherTxt = document.querySelector(".info_txt_box");
   weatherTxt.innerHTML = `
-    <p class="text-center">오늘 최고기온은 <span style="color:red;font-weight:bold;">${maxTemp}</span>°C이고 <br />
+    <p class="text-center section_txt">오늘 최고기온은 <span style="color:red;font-weight:bold;">${maxTemp}</span>°C이고 <br />
     오늘 최저기온은 <span style="color:red;font-weight:bold;">${minTemp}</span>°C 입니다. <br />
     비교적 추운관계로 따뜻한 패션을 준비했습니다.
     </p>

@@ -1047,6 +1047,12 @@ textarea#comment::placeholder {
 .shop4u_layout_pd{
   padding-top: 30px;
 }
+
+.card img:hover{
+  transform:scale(1.1, 1.2); 
+  transition: transform 0.5s;
+}
+
 .shop4u_btn{
   border: 1px solid #29a9e0;
   border-radius: 25px;

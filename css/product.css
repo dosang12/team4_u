@@ -467,41 +467,41 @@ a:hover {
 
 .section-products #product-1 .part-1::before {
   background: url("../images/products/cloths1.png") no-repeat center;
-  background-size: cover;
+  background-size: contain;
   transition: all 0.3s;
 }
 
 .section-products #product-2 .part-1::before {
   background: url("../images/products/cloths2.png") no-repeat center;
-  background-size: cover;
+  background-size: contain;
 }
 
 .section-products #product-3 .part-1::before {
   background: url("../images/products/cloths3.png") no-repeat center;
-  background-size: cover;
+  background-size: contain;
 }
 
 .section-products #product-4 .part-1::before {
   background: url("../images/products/cloths4.png") no-repeat center;
-  background-size: cover;
+  background-size: contain;
 }
 .section-products #product-5 .part-1::before {
   background: url("../images/products/cloths6.png") no-repeat center;
-  background-size: cover;
+  background-size: contain;
 }
 .section-products #product-6 .part-1::before {
   background: url("../images/products/cloths7.png") no-repeat center;
-  background-size: cover;
+  background-size: contain;
 }
 
 .section-products #product-7 .part-1::before {
   background: url("../images/products/cloths8.png") no-repeat center;
-  background-size: cover;
+  background-size: contain;
 }
 
 .section-products #product-8 .part-1::before {
   background: url("../images/products/cloths9.png") no-repeat center;
-  background-size: cover;
+  background-size: contain;
 }
 
 .section-products .single-product .part-1 .discount,

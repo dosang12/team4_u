@@ -191,7 +191,7 @@ function setInfo4u(maxTemp, minTemp, feelLike) {
       const infoEl = document.createElement("div");
       infoEl.classList.add("swiper-slide", "info4_item");
       infoEl.innerHTML = `
-        <img src="${el}.svg"/>
+        <img src="${el}.png"/>
         <div class="feedback_btn feedOn"></div>
         <div class="feedback_close "></div>
         <div class="feedback">

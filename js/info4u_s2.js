@@ -174,7 +174,18 @@ function setIcon(idCode, idx) {
   }
 }
 function setInfo4u(maxTemp, minTemp, feelLike) {
-  let winter = ["images/information4u/people05", "images/information4u/people01", "images/information4u/people02", "images/information4u/people06"];
+  let winter = [
+    "images/weather4u_img/model/final/model_photo_01",
+    "images/weather4u_img/model/final/model_photo_02",
+    "images/weather4u_img/model/final/model_photo_03",
+    "images/weather4u_img/model/final/model_photo_04",
+    "images/weather4u_img/model/final/model_photo_05",
+    "images/weather4u_img/model/final/model_photo_06",
+    "images/weather4u_img/model/final/model_photo_07",
+    "images/weather4u_img/model/final/model_photo_08",
+    "images/weather4u_img/model/final/model_photo_09",
+    "images/weather4u_img/model/final/model_photo_10",
+  ];
   if (feelLike < 8) {
     winter.forEach((el) => {
       const infoEl = document.createElement("div");

@@ -186,7 +186,7 @@ function setInfo4u(maxTemp, minTemp, feelLike) {
     "images/weather4u_img/model/final/model_photo_09",
     "images/weather4u_img/model/final/model_photo_10",
   ];
-  if (feelLike < 8) {
+  if (feelLike < 10) {
     winter.forEach((el) => {
       const infoEl = document.createElement("div");
       infoEl.classList.add("swiper-slide", "info4_item");
